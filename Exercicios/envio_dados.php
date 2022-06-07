@@ -1,6 +1,6 @@
 <?php
-$nome = $_GET['nome'];
-$email = $_GET['email'];
+$nome = urldecode($_GET['nome']);
+$email = urldecode($_GET['email']);
 
 
 echo "<br> $nome <br> ";
