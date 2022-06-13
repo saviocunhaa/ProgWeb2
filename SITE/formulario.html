@@ -10,8 +10,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
-<body class="container">
+<body>
+     <div class="container col-md-5">
+
+        <form class="form-group">
+            <label> Nome </label>
+                <input name="email" type="text" class="form-control" placeholder="Nome do atleta">
+            <label>Email</label>
+                <input type="email" class="form-control" placeholder="name@example.com">
+            <label> Telefone </label>
+                <input name="telefone" type="text" class="form-control" placeholder="(88)99999-9999"">
+            <label> Categorias </label>
+            <select class="form-control" name="categoria">
+                <option>Elite</option>
+                <option>Sub23</option>
+                <option>Amador</option>
+                <option>Master</option>
+                <option>Juvenil</option>
+            </select>
+            <label class="form-label">Observação</label>
+            <textarea class="form-control" rows="3"></textarea>           
+            <label> Sua primeira compatição? </label>   <br>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                    Sim
+            </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                    Não
+            </label>
+            <br><br>
+            
+            <button type="button" class="btn btn-success">Enviar</button>
+            <button type="button" class="btn btn-danger">Cancelar</button>
+
+
+            <br><br>
+            <p class="text-danger">
+               Obs: Se for a primeira competição o atleta só poderá se cadastrar na categoria iniciante!
+            </p>
+
+              
+        </form>
+    
         
+
+
+     </div>   
 
     <!-- cdn Bootstrap-->
     <!-- JavaScript Bundle with Popper -->
