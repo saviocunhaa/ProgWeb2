@@ -72,17 +72,21 @@
         let radios = form.q1.value; 
            
         for (var i = 0; i < arraySelects.length; i++) {
-          
-            if (selectedOption != 3 && radios == "off"){
-            document.getElementById('botao').disabled = false 
-            } else if (selectedOption == 3 && radios == "on"){           
+          if (selectedOption != 3 && radios == "off"){           
             document.getElementById('botao').disabled = false                   
-            }else {
-           document.getElementById('botao').disabled = false
-        }
-        }
-    
+            }else{
+            document.getElementById('botao').disabled = true
+           // continue;
+            //} if (selectedOption == 3 && radios == "on"){
+            //document.getElementById('botao').disabled = false    
+            //} else {        
+            //document.getElementById('botao').disabled = false                   
+            //} 
+        }   
+    }
 }
+    
+
 
     </script>
     </div>
